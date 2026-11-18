@@ -3,10 +3,13 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 
-import Exercise from './Exercise.jsx'
+import TemplateCenter from './latihan/templates/TemplateCenter.jsx'
+import PageRegister from './latihan/pages/PageRegister.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Exercise />
+    <TemplateCenter>
+      <PageRegister />
+    </TemplateCenter>
   </StrictMode>,
 )
